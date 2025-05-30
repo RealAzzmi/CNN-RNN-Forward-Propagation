@@ -1,0 +1,76 @@
+{
+  "conv_layers_experiment": {
+    "2_conv_layers": {
+      "test_accuracy": 0.5848000049591064,
+      "test_loss": 1.1373157501220703,
+      "f1_macro": 0.5781193223201542,
+      "model_path": "models/2_conv_layers.weights.h5"
+    },
+    "3_conv_layers": {
+      "test_accuracy": 0.730400025844574,
+      "test_loss": 0.8056791424751282,
+      "f1_macro": 0.7317555329070303,
+      "model_path": "models/3_conv_layers.weights.h5"
+    },
+    "4_conv_layers": {
+      "test_accuracy": 0.7373999953269958,
+      "test_loss": 1.0579023361206055,
+      "f1_macro": 0.740420814673242,
+      "model_path": "models/4_conv_layers.weights.h5"
+    }
+  },
+  "num_filters_experiment": {
+    "small_filters": {
+      "test_accuracy": 0.6567000150680542,
+      "test_loss": 0.9707057476043701,
+      "f1_macro": 0.6575246928620173,
+      "model_path": "models/small_filters.weights.h5"
+    },
+    "medium_filters": {
+      "test_accuracy": 0.7171000242233276,
+      "test_loss": 0.8298875689506531,
+      "f1_macro": 0.7157258227621377,
+      "model_path": "models/medium_filters.weights.h5"
+    },
+    "large_filters": {
+      "test_accuracy": 0.7426999807357788,
+      "test_loss": 0.8539060354232788,
+      "f1_macro": 0.741348851077612,
+      "model_path": "models/large_filters.weights.h5"
+    }
+  },
+  "filter_sizes_experiment": {
+    "small_kernels": {
+      "test_accuracy": 0.7109000086784363,
+      "test_loss": 0.8601256012916565,
+      "f1_macro": 0.7114994701587412,
+      "model_path": "models/small_kernels.weights.h5"
+    },
+    "medium_kernels": {
+      "test_accuracy": 0.7197999954223633,
+      "test_loss": 1.0206166505813599,
+      "f1_macro": 0.7184683482141919,
+      "model_path": "models/medium_kernels.weights.h5"
+    },
+    "mixed_kernels": {
+      "test_accuracy": 0.7202000021934509,
+      "test_loss": 1.0757378339767456,
+      "f1_macro": 0.7204872457121966,
+      "model_path": "models/mixed_kernels.weights.h5"
+    }
+  },
+  "pooling_types_experiment": {
+    "max_pooling": {
+      "test_accuracy": 0.7228000164031982,
+      "test_loss": 0.8099074363708496,
+      "f1_macro": 0.7246255235102211,
+      "model_path": "models/max_pooling.weights.h5"
+    },
+    "average_pooling": {
+      "test_accuracy": 0.6794000267982483,
+      "test_loss": 0.8923933506011963,
+      "f1_macro": 0.6790405389448484,
+      "model_path": "models/average_pooling.weights.h5"
+    }
+  }
+}
