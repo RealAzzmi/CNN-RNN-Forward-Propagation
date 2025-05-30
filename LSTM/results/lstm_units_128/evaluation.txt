@@ -13,12 +13,12 @@ Configuration:
   max_sequence_length: 128
 
 Validation Results:
-  Macro F1: 0.7820
-  Accuracy: 0.7900
+  Macro F1: 0.7557
+  Accuracy: 0.7600
 
 Test Results:
-  Macro F1: 0.7270
-  Accuracy: 0.7375
+  Macro F1: 0.7473
+  Accuracy: 0.7525
 
 Classification Report:
-{'negative': {'precision': 0.7483443708609272, 'recall': 0.738562091503268, 'f1-score': 0.743421052631579, 'support': 153.0}, 'neutral': {'precision': 0.6428571428571429, 'recall': 0.65625, 'f1-score': 0.6494845360824743, 'support': 96.0}, 'positive': {'precision': 0.7880794701986755, 'recall': 0.7880794701986755, 'f1-score': 0.7880794701986755, 'support': 151.0}, 'accuracy': 0.7375, 'macro avg': {'precision': 0.7264269946389152, 'recall': 0.7276305205673145, 'f1-score': 0.7269950196375762, 'support': 400.0}, 'weighted avg': {'precision': 0.738027436140019, 'recall': 0.7375, 'f1-score': 0.7377348412913727, 'support': 400.0}}
+{'negative': {'precision': 0.7518248175182481, 'recall': 0.673202614379085, 'f1-score': 0.7103448275862069, 'support': 153.0}, 'neutral': {'precision': 0.5891472868217055, 'recall': 0.7916666666666666, 'f1-score': 0.6755555555555556, 'support': 96.0}, 'positive': {'precision': 0.9104477611940298, 'recall': 0.8079470198675497, 'f1-score': 0.856140350877193, 'support': 151.0}, 'accuracy': 0.7525, 'macro avg': {'precision': 0.7504732885113278, 'recall': 0.7576054336377672, 'f1-score': 0.7473469113396517, 'support': 400.0}, 'weighted avg': {'precision': 0.7726623713886854, 'recall': 0.7525, 'f1-score': 0.7570332123411978, 'support': 400.0}}

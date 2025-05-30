@@ -1,15 +1,15 @@
 {
   "models_equivalent": true,
-  "max_probability_difference": 1.905191401085915e-06,
-  "mean_probability_difference": 1.1386798236696031e-07,
+  "max_probability_difference": 1.738853671329199e-06,
+  "mean_probability_difference": 1.0766269335502882e-07,
   "label_agreement": 1.0,
   "tolerance": 0.0001,
   "keras_metrics": {
-    "accuracy": 0.7375,
-    "macro_f1": 0.7269950196375762
+    "accuracy": 0.75,
+    "macro_f1": 0.7421376813587671
   },
   "scratch_metrics": {
-    "accuracy": 0.7375,
-    "macro_f1": 0.7269950196375762
+    "accuracy": 0.75,
+    "macro_f1": 0.7421376813587671
   }
 }

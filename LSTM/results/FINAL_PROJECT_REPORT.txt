@@ -19,11 +19,11 @@ Max sequence length: 128
 
 3. BEST KERAS MODEL
 ------------------------------
-Experiment name: lstm_units_128
+Experiment name: lstm_unidirectional
 Configuration:
   vocab_size: 2743
   embedding_dim: 128
-  lstm_units: 128
+  lstm_units: 64
   num_lstm_layers: 1
   bidirectional: False
   dropout_rate: 0.3
@@ -32,40 +32,40 @@ Configuration:
   max_sequence_length: 128
 
 Performance:
-  Validation Macro F1: 0.7820
-  Validation Accuracy: 0.7900
-  Test Macro F1: 0.7270
-  Test Accuracy: 0.7375
+  Validation Macro F1: 0.7972
+  Validation Accuracy: 0.8000
+  Test Macro F1: 0.7421
+  Test Accuracy: 0.7500
 
 4. NUMPY SCRATCH IMPLEMENTATION
 ------------------------------
 Models equivalent: True
-Max probability difference: 0.00000191
+Max probability difference: 0.00000174
 Label agreement: 1.0000
 
 Scratch Model Performance:
-  Accuracy: 0.7375
-  Macro F1: 0.7270
-  Weighted F1: 0.7377
+  Accuracy: 0.7500
+  Macro F1: 0.7421
+  Weighted F1: 0.7510
 
 5. ALL EXPERIMENTS SUMMARY
 ------------------------------
-lstm_units_64:
-  Val F1: 0.6882, Test F1: 0.7608
-lstm_layers_1:
-  Val F1: 0.7714, Test F1: 0.7520
-lstm_units_32:
-  Val F1: 0.7600, Test F1: 0.7449
-lstm_units_128:
-  Val F1: 0.7820, Test F1: 0.7270
 lstm_layers_2:
-  Val F1: 0.7729, Test F1: 0.7180
-lstm_bidirectional:
-  Val F1: 0.6753, Test F1: 0.6405
+  Val F1: 0.7381, Test F1: 0.7524
+lstm_units_128:
+  Val F1: 0.7557, Test F1: 0.7473
 lstm_unidirectional:
-  Val F1: 0.6255, Test F1: 0.5942
+  Val F1: 0.7972, Test F1: 0.7421
+lstm_units_64:
+  Val F1: 0.7566, Test F1: 0.7169
+lstm_bidirectional:
+  Val F1: 0.6997, Test F1: 0.6742
+lstm_layers_1:
+  Val F1: 0.7078, Test F1: 0.6386
+lstm_units_32:
+  Val F1: 0.5037, Test F1: 0.4968
 lstm_layers_3:
-  Val F1: 0.5909, Test F1: 0.5684
+  Val F1: 0.4537, Test F1: 0.4942
 
 6. PROJECT STRUCTURE
 ------------------------------
