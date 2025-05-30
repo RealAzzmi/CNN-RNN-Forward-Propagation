@@ -1,0 +1,50 @@
+# Ignore virtual environment folders
+venv/
+.env/
+.venv/
+myenv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.out
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# TensorBoard and training artifacts
+logs/
+events.out.tfevents.*
+
+# Saved models or weights
+saved_models/
+models/
+checkpoints/
+
+# Pickle and joblib files
+*.pkl
+*.joblib
+
+# Output/Export folders
+output/
+results/
+figures/
+
+# Environment/config files
+.env
+.env.*
+
+# Jupyter notebook runtime
+*.nbconvert.ipynb
