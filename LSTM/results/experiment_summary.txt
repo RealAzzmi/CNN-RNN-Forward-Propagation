@@ -1,0 +1,53 @@
+LSTM Sentiment Classification - Experiment Summary
+============================================================
+
+Results (sorted by Test Macro F1):
+----------------------------------------
+1. lstm_units_64
+   Val Macro F1: 0.6882
+   Test Macro F1: 0.7608
+   Test Accuracy: 0.7650
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 1, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+2. lstm_layers_1
+   Val Macro F1: 0.7714
+   Test Macro F1: 0.7520
+   Test Accuracy: 0.7625
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 1, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+3. lstm_units_32
+   Val Macro F1: 0.7600
+   Test Macro F1: 0.7449
+   Test Accuracy: 0.7575
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 32, 'num_lstm_layers': 1, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+4. lstm_units_128
+   Val Macro F1: 0.7820
+   Test Macro F1: 0.7270
+   Test Accuracy: 0.7375
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 128, 'num_lstm_layers': 1, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+5. lstm_layers_2
+   Val Macro F1: 0.7729
+   Test Macro F1: 0.7180
+   Test Accuracy: 0.7375
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 2, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+6. lstm_bidirectional
+   Val Macro F1: 0.6753
+   Test Macro F1: 0.6405
+   Test Accuracy: 0.6800
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 1, 'bidirectional': True, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+7. lstm_unidirectional
+   Val Macro F1: 0.6255
+   Test Macro F1: 0.5942
+   Test Accuracy: 0.6800
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 1, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+
+8. lstm_layers_3
+   Val Macro F1: 0.5909
+   Test Macro F1: 0.5684
+   Test Accuracy: 0.6350
+   Config: {'vocab_size': 2743, 'embedding_dim': 128, 'lstm_units': 64, 'num_lstm_layers': 3, 'bidirectional': False, 'dropout_rate': 0.3, 'dense_units': 32, 'num_classes': 3, 'max_sequence_length': 128}
+

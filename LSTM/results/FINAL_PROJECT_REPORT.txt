@@ -1,0 +1,77 @@
+LSTM-BASED SENTIMENT CLASSIFICATION PROJECT REPORT
+============================================================
+IF3270 - Machine Learning
+NusaX Sentiment (Indonesian) Dataset
+
+1. DATASET INFORMATION
+------------------------------
+Classes: ['negative', 'neutral', 'positive']
+Train samples: 500
+Validation samples: 100
+Test samples: 400
+Total samples: 1000
+
+2. PREPROCESSING
+------------------------------
+Max tokens (vocabulary size): 10000
+Actual vocabulary size: 2743
+Max sequence length: 128
+
+3. BEST KERAS MODEL
+------------------------------
+Experiment name: lstm_units_128
+Configuration:
+  vocab_size: 2743
+  embedding_dim: 128
+  lstm_units: 128
+  num_lstm_layers: 1
+  bidirectional: False
+  dropout_rate: 0.3
+  dense_units: 32
+  num_classes: 3
+  max_sequence_length: 128
+
+Performance:
+  Validation Macro F1: 0.7820
+  Validation Accuracy: 0.7900
+  Test Macro F1: 0.7270
+  Test Accuracy: 0.7375
+
+4. NUMPY SCRATCH IMPLEMENTATION
+------------------------------
+Models equivalent: True
+Max probability difference: 0.00000191
+Label agreement: 1.0000
+
+Scratch Model Performance:
+  Accuracy: 0.7375
+  Macro F1: 0.7270
+  Weighted F1: 0.7377
+
+5. ALL EXPERIMENTS SUMMARY
+------------------------------
+lstm_units_64:
+  Val F1: 0.6882, Test F1: 0.7608
+lstm_layers_1:
+  Val F1: 0.7714, Test F1: 0.7520
+lstm_units_32:
+  Val F1: 0.7600, Test F1: 0.7449
+lstm_units_128:
+  Val F1: 0.7820, Test F1: 0.7270
+lstm_layers_2:
+  Val F1: 0.7729, Test F1: 0.7180
+lstm_bidirectional:
+  Val F1: 0.6753, Test F1: 0.6405
+lstm_unidirectional:
+  Val F1: 0.6255, Test F1: 0.5942
+lstm_layers_3:
+  Val F1: 0.5909, Test F1: 0.5684
+
+6. PROJECT STRUCTURE
+------------------------------
+datasets/data_loader.py - Data loading utilities
+preprocessing/text_preprocessor.py - Text preprocessing
+models/lstm_keras.py - Keras LSTM implementation
+models/lstm_scratch.py - NumPy scratch implementation
+main.py - Main experiment runner
+results/ - All experiment results and models

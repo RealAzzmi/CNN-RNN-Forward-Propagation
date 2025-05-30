@@ -1,0 +1,15 @@
+{
+  "models_equivalent": true,
+  "max_probability_difference": 1.905191401085915e-06,
+  "mean_probability_difference": 1.1386798236696031e-07,
+  "label_agreement": 1.0,
+  "tolerance": 0.0001,
+  "keras_metrics": {
+    "accuracy": 0.7375,
+    "macro_f1": 0.7269950196375762
+  },
+  "scratch_metrics": {
+    "accuracy": 0.7375,
+    "macro_f1": 0.7269950196375762
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vocab_size": 2743,
+  "embedding_dim": 128,
+  "lstm_units": 32,
+  "num_lstm_layers": 1,
+  "bidirectional": false,
+  "dropout_rate": 0.3,
+  "dense_units": 32,
+  "num_classes": 3,
+  "max_sequence_length": 128
+}
