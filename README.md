@@ -25,7 +25,7 @@ Pastikan Anda telah menginstal Python 3.x. Program ini juga membutuhkan beberapa
    pip install numpy matplotlib scikit-learn tensorflow
    ```
 3. **Jalankan program**:
-   Untuk menjalankan model dan melakukan pelatihan, masuk ke folder CNN atau RNN. Dapat melakukan _run_ dari notebook maupun kode python tergantung implementasi
+   Untuk menjalankan model dan melakukan pelatihan, masuk ke folder CNN atau RNN. Dapat melakukan _run_ dari notebook maupun kode python tergantung implementasi. Terdapat README tambahan untuk membantu di dalam folder.
 
 ## Pembagian Tugas Anggota Kelompok
 
