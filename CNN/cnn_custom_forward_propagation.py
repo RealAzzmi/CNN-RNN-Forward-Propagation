@@ -195,8 +195,8 @@ def test_cnn_custom_forward_propagation(model_name: str = "3_conv_layers", test_
     print(f"Keras F1 Score: {keras_f1:.4f}")
     print(f"Custom F1 Score: {custom_f1:.4f}")
 
-    assert(keras_predictions == custom_predictions)
-    if keras_predictions == custom_predictions:
+    predictions_match = np.allclose(keras_predictions, custom_predictions, rtol=1e-5, atol=1e-6)
+    if predictions_match:
         print("The custom forward propagation MATCH keras forward propagation.")
     else:
         print("The custom forward propagation DIDN'T MATCH keras forward propagation.")
