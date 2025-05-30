@@ -1,0 +1,24 @@
+Experiment: lstm_units_32
+==================================================
+
+Configuration:
+  vocab_size: 2743
+  embedding_dim: 128
+  lstm_units: 32
+  num_lstm_layers: 1
+  bidirectional: False
+  dropout_rate: 0.3
+  dense_units: 32
+  num_classes: 3
+  max_sequence_length: 128
+
+Validation Results:
+  Macro F1: 0.5037
+  Accuracy: 0.6600
+
+Test Results:
+  Macro F1: 0.4968
+  Accuracy: 0.6475
+
+Classification Report:
+{'negative': {'precision': 0.5454545454545454, 'recall': 0.8627450980392157, 'f1-score': 0.6683544303797468, 'support': 153.0}, 'neutral': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 96.0}, 'positive': {'precision': 0.8037974683544303, 'recall': 0.8410596026490066, 'f1-score': 0.8220064724919094, 'support': 151.0}, 'accuracy': 0.6475, 'macro avg': {'precision': 0.44975067126965856, 'recall': 0.5679349002294075, 'f1-score': 0.4967869676238854, 'support': 400.0}, 'weighted avg': {'precision': 0.512069907940161, 'recall': 0.6475, 'f1-score': 0.565953012985949, 'support': 400.0}}

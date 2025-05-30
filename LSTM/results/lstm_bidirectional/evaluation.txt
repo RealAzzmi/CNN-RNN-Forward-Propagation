@@ -1,0 +1,24 @@
+Experiment: lstm_bidirectional
+==================================================
+
+Configuration:
+  vocab_size: 2743
+  embedding_dim: 128
+  lstm_units: 64
+  num_lstm_layers: 1
+  bidirectional: True
+  dropout_rate: 0.3
+  dense_units: 32
+  num_classes: 3
+  max_sequence_length: 128
+
+Validation Results:
+  Macro F1: 0.6997
+  Accuracy: 0.7300
+
+Test Results:
+  Macro F1: 0.6742
+  Accuracy: 0.7175
+
+Classification Report:
+{'negative': {'precision': 0.6354679802955665, 'recall': 0.8431372549019608, 'f1-score': 0.7247191011235955, 'support': 153.0}, 'neutral': {'precision': 0.68, 'recall': 0.3541666666666667, 'f1-score': 0.4657534246575342, 'support': 96.0}, 'positive': {'precision': 0.8435374149659864, 'recall': 0.8211920529801324, 'f1-score': 0.8322147651006712, 'support': 151.0}, 'accuracy': 0.7175, 'macro avg': {'precision': 0.7196684650871843, 'recall': 0.6728319915162532, 'f1-score': 0.6742290969606003, 'support': 400.0}, 'weighted avg': {'precision': 0.7247018766127141, 'recall': 0.7175, 'f1-score': 0.7031469519230867, 'support': 400.0}}

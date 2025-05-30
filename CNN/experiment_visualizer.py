@@ -4,7 +4,7 @@ from typing import Dict
 from config import PLOTS_DIR
 
 class ExperimentVisualizer:
-    def plot_comparison(results: Dict, title: str, filename: str):
+    def plot_comparison(self, results: Dict, title: str, filename: str):
         plt.figure(figsize=(15, 5))
         
         # Plot training loss
@@ -44,7 +44,7 @@ class ExperimentVisualizer:
         
         print(f"Training loss, validation loss, and f1 scores were already saved to: {plot_path}")
     
-    def print_summary(results: Dict):
+    def print_summary(self, results: Dict):
         print("EXPERIMENT RESULTS SUMMARY")
         
         for exp_name, exp_results in results.items():

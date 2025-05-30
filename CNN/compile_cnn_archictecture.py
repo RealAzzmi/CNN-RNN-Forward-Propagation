@@ -4,7 +4,7 @@ from typing import List
 from config import INPUT_SHAPE, NUM_CLASSES, DROPOUT_RATE
 
 class CompileCNNArchitecture:
-    def create_cnn_model(conv_layers: List[int], filters_per_layer: List[int], filter_sizes: List[int], pooling_type: str = 'max') -> keras.Model:
+    def create_cnn_model(self, conv_layers: List[int], filters_per_layer: List[int], filter_sizes: List[int], pooling_type: str = 'max') -> keras.Model:
         model = keras.Sequential()
         
         # Add input layer
